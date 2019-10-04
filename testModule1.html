@@ -6,45 +6,50 @@
 </head>
 <body>
 <!--//bài 1-->
-<!--<script>-->
-<!--    let toan = parseInt(prompt("Mời nhập điểm toán"));-->
-<!--    let van = parseInt(prompt("Mời nhập điểm văn"));-->
-<!--    let anh = parseInt(prompt("Mời nhập điểm tiếng anh"));-->
-<!--    let tb = ((toan*2)+van+(anh*2)/5)-->
-<!--    if(tb<5){-->
-<!--        document.write("Không đạt");-->
-<!--    } else if(tb>=5 && tb<7.5){-->
-<!--        document.write("Đạt")-->
-<!--    } else if(7.6<tb && tb<8.5){-->
-<!--        document.write("Khá")-->
-<!--    } else {-->
-<!--    document.write("Tốt")-->
-<!--    }-->
-<!--</script>-->
-
-//bài 2
 <script>
-    var n = Number(prompt("nhập n"));
-    function checkN(n) {
-        var snt = true;
-        if (n < 1) {
-            snt=false;
-        } else {
-            for (let i = 2; i< n; i++) {
-                if (n % i === 0) {
-                    snt =false;
-                    break;
-                }
-            }
-        }
-        if (snt == true) {
-            document.write(n + " là snt" + "<br>")
-        } else {
-            document.write(n + " không là snt" + "<br>")
-        }
+    let toan = parseInt(prompt("Mời nhập điểm toán"));
+    let van = parseInt(prompt("Mời nhập điểm văn"));
+    let anh = parseInt(prompt("Mời nhập điểm tiếng anh"));
+    let tb = ((toan*2)+van+(anh*2))/5;
+    while (toan>10 || van >10 ||anh >10){
+        alert("mời nhập lại")
     }
-
-    checkN(n);
+    document.write(tb);
+    document.write("<br>");
+    if(tb<5){
+        document.write("Không đạt");
+    } else if(tb>=5 && tb<7.5){
+        document.write("Đạt")
+    } else if(7.6<tb && tb<8.5){
+        document.write("Khá")
+    } else {
+    document.write("Tốt")
+    }
 </script>
-</body>
-</html>
+
+<!--//bài 2-->
+<!--<script>-->
+<!--    var n = Number(prompt("nhập n"));-->
+<!--    function checkN(n) {-->
+<!--        var snt = true;-->
+<!--        if (n < 1) {-->
+<!--            snt=false;-->
+<!--        } else {-->
+<!--            for (let i = 2; i< n; i++) {-->
+<!--                if (n % i === 0) {-->
+<!--                    snt =false;-->
+<!--                    break;-->
+<!--                }-->
+<!--            }-->
+<!--        }-->
+<!--        if (snt == true) {-->
+<!--            document.write(n + " là snt" + "<br>")-->
+<!--        } else {-->
+<!--            document.write(n + " không là snt" + "<br>")-->
+<!--        }-->
+<!--    }-->
+
+<!--    checkN(n);-->
+<!--</script>-->
+<!--</body>-->
+<!--</html>-->
